@@ -1,0 +1,5 @@
+#!/bin/bash
+#touch config_{001..100}; 
+#echo "nginx-02.com" | tee -a  config_*
+
+find server_linux/ -type f -exec sed -i 's/nginx-01.com/nginx-02.com/g' {} \;

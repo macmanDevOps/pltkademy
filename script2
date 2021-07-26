@@ -1,0 +1,13 @@
+#!/bin/bash
+touch random_text{01..10}.txt;
+for FILE in random_text*; 
+do shuf -zer -n1000 {A..z} {a..z} {0..9} > $FILE; done
+
+
+# z - avoid multiline output
+# e - repeat the result
+# r - allow any character to appear multiple times
+
+# n1000 - random string 1000 characters long
+
+#{A..z} {a..z} {0..9} - allowed character classes
