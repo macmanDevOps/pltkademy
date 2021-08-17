@@ -1,3 +1,4 @@
+#collect in one file hostname, cpu cores number, total memory and total disk size
 #!/bin/bash
 cat /proc/sys/kernel/hostname >> PCinfo.txt
 cat /proc/cpuinfo | grep processor | wc -l >> PCinfo.txt
