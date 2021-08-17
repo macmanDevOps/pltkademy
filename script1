@@ -1,3 +1,4 @@
+# script corrects one server name (f.e. change nginx-01.com to nginx-02.com) in 100 configuration files on linux server in one directory
 #!/bin/bash
 #touch config_{001..100}; 
 #echo "nginx-02.com" | tee -a  config_*
