@@ -1,3 +1,4 @@
+#script that creates 10 files named "random_text_$NUM.txt" each one containing 1000 random characters
 #!/bin/bash
 touch random_text{01..10}.txt;
 for FILE in random_text*; 
